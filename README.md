@@ -15,7 +15,7 @@ This is a Warehouse Management System web application built with React and Redux
 
 ## Demo
 
-You can find a live demo of the application [here](<add-link-to-live-demo>).
+You can find a live demo of the application [here](https://warehouse-managements.netlify.app/).
 
 ## Installation
 
