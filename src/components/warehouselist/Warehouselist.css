@@ -1,0 +1,83 @@
+.warehouses {
+  margin-top: 100px;
+}
+
+.Warehouse-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 30px;
+  cursor: default;
+  margin: 2rem;
+}
+
+
+.warehouseInfo {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.warehouseInfo:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.warehouseName {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tableContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.leftColumn {
+  text-align: right;
+}
+
+.rightColumn {
+  text-align: left;
+}
+.WarehouseDetails{
+    font-size: 1.2rem;
+}
+
+.EditInfoButton {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: var(--color-light);
+  border-radius: 25px;
+}
+.EditInfoButton:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.EditInfoButton:active {
+  animation: shrinkAndComeBack 0.8s ease-out;
+}
+@media screen and (max-width: 1024px) {
+  .Warehouse-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Warehouse-main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

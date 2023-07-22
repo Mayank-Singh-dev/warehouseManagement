@@ -1,0 +1,90 @@
+.Nav {
+  background-color: var(--color-bg);
+  background-image: url(../../bg-texture.png);
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: "Playfair Display", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.Head {
+  padding: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.Navbars {
+  display: flex;
+  gap: 5rem;
+  cursor: pointer;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  margin-left: auto;
+}
+.NavbarsMobile {
+  display: none;
+}
+.NavName {
+  position: relative;
+}
+.linkss{
+  color: white;
+}
+.NavName::before,
+.NavName::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4db5ff;
+  transition: width 0.2s ease-in-out;
+}
+
+.NavName::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.NavName::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.NavName:hover::before,
+.NavName:hover::after {
+  width: 100%;
+}
+
+.menuIcon {
+  font-size: 30px;
+  margin-top: 1.8rem;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menuIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .NavbarsMobile {
+    background-color: var(--color-bg);
+    width: 12rem;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 100%;
+    right: 1%;
+  }
+  .Navbars {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+.deta {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EditData,
+.Datas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.EditData:hover,
+.Datas:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.EditinfoDetails,
+.SaveDetails {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: var(--color-light);
+  border-radius: 25px;
+}
+.EditinfoDetails:hover,
+.SaveDetails:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.EditinfoDetails:active,
+.SaveDetails:active {
+  animation: shrinkAndComeBack 0.8s ease-out;
+}
+
+.EditableHead {
+  font-size: 18px;
+}
+.EditableDetails {
+  font-size: 18px;
+}
+.Editedbox {
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+.EditedInput {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--color-light);
+  border-radius: 25px;
+}
+
+.EditableRadio {
+  margin-left: 1rem;
+}
